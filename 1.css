@@ -1,0 +1,971 @@
+@font-face {
+    font-family: First;
+    src: url(Fonts/Jersey25-Regular.ttf);
+}
+@font-face {
+    font-family: Second;
+    src: url(Fonts/SportingOutline-x3e85.ttf);
+}
+@font-face{
+    font-family: Third;
+    src: url(Fonts/Outfit-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Fourth;
+    src: url(Fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: Fifth;
+    src: url(Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Sixth;
+    src: url(Fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family: Seventh;
+    src: url(Fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face{
+    font-family: Eighth;
+    src: url(Fonts/Caveat-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: rgba(0, 0, 0, 0.7) url(images/329948258_649332403862468_18267755556948211_n.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.body1{
+    background: rgba(0, 0, 0, 0.7) url(images/329948258_649332403862468_18267755556948211_n.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*.bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 51, 15, 0.45);
+    z-index: -1;
+}*/
+.gradient{
+    background: linear-gradient(to right, black, rgb(3, 49, 3), rgb(1, 46, 1));
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    position: fixed;
+    z-index: -1;
+}
+.title{
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.title pre{
+    font-size: 100px;
+    font-family: Second;
+    color: whitesmoke !important;
+    padding: 40px;
+    text-align: center;
+}
+.ordering{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+.button1{
+    position: absolute;
+    bottom: 120px;
+    left: 35%;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: whitesmoke;
+    padding: 20px;
+    transition: .5s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.button2{
+    position: absolute;
+    bottom: 120px;
+    right: 35%;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: whitesmoke;
+    padding: 20px;
+    transition: .5s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.button1:hover{
+    color: #000;
+    background-color: #02c39a;
+}
+.button2:hover{
+    color: #000;
+    background-color: #02c39a;
+}
+.heading{
+    padding: 5px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+}
+.logomsc{
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    height: 70px;
+}
+.logomsc1{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    height: 60px;
+}
+.leftpanel{
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+.leftpanel p{
+    font-family: Fourth;
+    font-size: 20px;
+}
+.leftpanel a{
+    text-decoration: none;
+    color: white;
+}
+.dashboard{
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    transition: .5s;
+    color: #02c39a;
+}
+.addnew{
+    position: absolute;
+    top: 41%;
+    left: 22%;
+    transition: .5s;
+}
+.logout{
+    position: absolute;
+    top: 52%;
+    left: 22%;
+    transition: .5s;
+}
+.help{
+    position: absolute;
+    top: 63%;
+    left: 22%;
+    transition: .5s;
+}
+.dashboard:hover{
+    color: #02c39a;
+}
+.addnew:hover{
+    color: #02c39a;
+}
+.logout:hover{
+    color: #02c39a;
+}
+.help:hover{
+    color: #02c39a;
+}
+.dashboardicon{
+    position: absolute;
+    top: 29%;
+    left: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(106%) contrast(101%);
+}
+.addnewicon{
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(106%) contrast(101%);
+}
+.logouticon{
+    position: absolute;
+    top: 51.5%;
+    left: 24px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(106%) contrast(101%);
+}
+.helpicon{
+    position: absolute;
+    top: 62%;
+    left: 24px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(106%) contrast(101%);
+}
+.leftpanel img{
+    position: absolute;
+    width: 90%;
+    padding: 0;
+    left: 23px;
+    top: 40px;
+} 
+.heading img{
+    height: auto;
+    padding: 0;
+    left: 10px;
+}
+.heading pre{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-family: Second;
+    font-size: 60px;
+    color: white;
+}
+svg{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: -1;
+}
+.dots img{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.dots1 img{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+.dots2 img{
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    width: 100px;
+    height: 100px;
+}
+.dots3 img{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.quote{
+    color: whitesmoke;
+    position: absolute;
+    bottom: 30px;
+    left: 37.5%;
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper{
+    position: absolute;
+    width: 350px;
+    height: 440px;
+    top: 17.5%;
+    left: 35.5%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #40916c;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px black;
+    padding: 15px;
+}
+.welcome{
+    position: absolute;
+    top: 0;
+    left: 13%;
+    margin-top: 60px;
+    font-family: Fifth;
+    font-size: 26px;
+}
+.welcome1{
+    position: absolute;
+    padding-top: 10px;
+    top: 0;
+    left: 27%;
+    margin-top: 10px;
+    font-family: Third;
+    font-size: 43px;
+    color: #b7e4c7;
+    text-shadow: 5px 5px 2px black;
+}
+.instructions{
+    position: absolute;
+    top: 75px;
+    left: 27%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+.please{
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+
+}
+.input-box{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.input-box1{
+    position: absolute;
+    top: 51%;
+    left: 15%;
+}
+.input-box1 img{
+    position: absolute;
+    top: 30px;
+    left: 238px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /*filter: invert(46%) sepia(100%) saturate(489%) hue-rotate(120deg) brightness(103%) contrast(98%);*/
+}
+.input-box label, .input-box1 label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.input-box input, .input-box1 input{
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-color: white;
+    width: 246px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+.forgot{
+    position: absolute;
+    left: 15%;
+    top: 67%;
+}
+.forgot a{
+    color: #02c39a;
+}
+.login{
+    position: absolute;
+    left: 16%;
+    top: 80%;
+}
+.login button{
+    padding-left: 79px;
+    padding-right: 79px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 19px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 264px;
+}
+.login button:hover{
+    color: black;
+    background-color: #02c39a;
+}
+.goback{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.back{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.order{
+    position: absolute;
+    bottom: 5%;
+    right: 12%;
+}
+.pricechart{
+    position: absolute;
+    bottom: 5%;
+    left: 28%;
+}
+.goback p{
+    position: absolute;
+    top: 3.5px;
+    left: 8px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.goback button{
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.5s;
+}
+.goback button:hover{
+    background-color: #02c39a;
+}
+.back button{
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.5s;
+}
+.back button:hover{
+    background-color: #02c39a;
+}
+.order button{
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.5s;
+}
+.order button:hover{
+    background-color: #02c39a;
+}
+.pricechart button{
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 20px black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.5s;
+}
+.pricechart button:hover{
+    background-color: #02c39a;
+}
+.neworder{
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    top: 23%;
+    left: 28%;
+    background-color: #fae588;
+    border-radius: 7%;
+    color: black;
+    transition: 0.5s;
+}
+.verified{
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    top: 23%;
+    left: 51%;
+    background-color: #bde0fe;
+    border-radius: 7%;
+    color: black;
+    transition: 0.5s;
+}
+.onprocess{
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    top: 23%;
+    left: 74%;
+    background-color: #e0aaff;
+    border-radius: 7%;
+    color: black;
+    transition: 0.5s;
+}
+.finished{
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    top: 57%;
+    left: 28%;
+    background-color: #ffafcc;
+    border-radius: 7%;
+    color: black;
+    transition: 0.5s;
+}
+.claimed{
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    height: 150px;
+    width: 230px;
+    top: 57%;
+    left: 51%;
+    background-color: #b5e48c;
+    border-radius: 7%;
+    color: black;
+    transition: 0.5s;
+}
+.neworder p{
+    position: absolute;
+    font-size: 20px;
+    font-family: Sixth;
+}
+.verified p{
+    position: absolute;
+    font-size: 20px;
+    font-family: Sixth;
+}
+.onprocess p{
+    position: absolute;
+    font-size: 20px;
+    font-family: Sixth;
+}
+.finished p{
+    position: absolute;
+    font-size: 20px;
+    font-family: Sixth;
+}
+.claimed p{
+    position: absolute;
+    font-size: 20px;
+    font-family: Sixth;
+}
+.neworder:hover{
+    background-color: #02c39a;
+}
+.verified:hover{
+    background-color: #02c39a;
+}
+.onprocess:hover{
+    background-color: #02c39a;
+}
+.finished:hover{
+    background-color: #02c39a;
+}
+.claimed:hover{
+    background-color: #02c39a;
+}
+.newordertag{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 25px;
+    font-family: Fourth;
+    color: white;
+}
+.newordertable{
+    padding: 0;
+    width: 1000px;
+    position: absolute;
+    top: 21.5%;
+    left: 13%;
+    background-color: black;
+    color: black;
+    text-align: center;
+}
+.newordertable th{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: skyblue;
+    font-family: Seventh;
+}
+.newordertable td{
+    padding: 10px;
+    background-color: white;
+    font-family: Fourth;
+}
+.verifyBtn{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Fourth;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.verifyBtn:hover{
+    background-color: skyblue;
+}
+.verifiedtable{
+    padding: 0;
+    width: 1200px;
+    position: absolute;
+    top: 21.5%;
+    left: 6%;
+    background-color: black;
+    color: black;
+    text-align: center;
+}
+.verifiedtable th{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: skyblue;
+    font-family: Seventh;
+}
+.verifiedtable td{
+    padding: 11px;
+    background-color: white;
+    font-family: Fourth;
+}
+.home{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    transition: .5s;
+    color: #02c39a;
+}
+.shop{
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    transition: .5s;
+}
+.home1{
+    position: absolute;
+    top: 29%;
+    left: 22%;
+    transition: .5s;
+}
+.shop1{
+    position: absolute;
+    top: 39%;
+    left: 22%;
+    transition: .5s;
+    color: #02c39a;
+}
+.howtoorder{
+    position: absolute;
+    top: 49%;
+    left: 22%;
+    transition: .5s;
+}
+.contactus{
+    position: absolute;
+    top: 59%;
+    left: 22%;
+    transition: .5s;
+}
+.aboutus{
+    position: absolute;
+    top: 69%;
+    left: 22%;
+    transition: .5s;
+}
+.home1:hover{
+    color: #02c39a;
+}
+.shop:hover{
+    color: #02c39a;
+}
+.howtoorder:hover{
+    color: #02c39a;
+}
+.contactus:hover{
+    color: #02c39a;
+}
+.aboutus:hover{
+    color: #02c39a;
+}
+.homeicon{
+    position: absolute;
+    top: 28%;
+    left: 17px;
+    height: 40px;
+}
+.shopicon{
+    position: absolute;
+    top: 38%;
+    left: 5px;
+    height: 40px;
+}
+.howtoordericon{
+    position: absolute;
+    top: 48%;
+    left: 20px;
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(106%) contrast(101%);
+}
+.contactusicon{
+    position: absolute;
+    top: 58%;
+    left: 20px;
+    height: 40px;
+}
+.aboutusicon{
+    position: absolute;
+    top: 68%;
+    left: 20px;
+    height: 40px;
+}
+.heading1 pre{
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    font-family: Second;
+    font-size: 60px;
+    color: white;
+}
+.heading1 p{
+    position: absolute;
+    top: 82px;
+    left: 27.5%;
+    font-family: Seventh;
+    font-size: 20px;
+    color: white;
+}
+.homequote pre{
+    position: absolute;
+    top: 20%;
+    left: 42%;
+}
+.homequote p{
+    position: absolute;
+    top: 70%;
+    left: 53%;
+}
+.homequote p, pre{
+    font-family: Eighth;
+    font-size: 70px;
+    text-shadow: 5px 5px 2px black;
+}
+.quote1{
+    color: white;
+}
+.quote2{
+    color: #02c39a;
+}
+.homequote1 pre{
+    position: absolute;
+    top: 17%;
+    left: 43%;
+}
+.homequote2 p{
+    position: absolute;
+    top: 17%;
+    left: 42%;
+}
+.homequote3 p{
+    position: absolute;
+    top: 17%;
+    right: 10%;
+}
+.quote3{
+    font-family: Seventh;
+    color: white;
+    font-size: 50px;
+    text-shadow: 5px 5px 2px black;
+}
+.femaleunif{
+    font-family: Sixth;
+    color: white;
+    font-size: 40px;
+}
+.sizeandprice{
+    font-family: Sixth;
+    color: white;
+    font-size: 40px;
+}
+.uniftypeandgender{
+    position: absolute;
+    top: 23%;
+    right: 10%;
+}
+.uniftypeandgender p{
+    font-family: Seventh;
+    color: white;
+    font-size: 20px;
+}
+.uniformBtn button{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Fourth;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.uniformBtn button:hover{
+    background-color: #02c39a;
+}
+.shs{
+    position: absolute;
+    top: 50%;
+    left: 53.5%;
+}
+.shspe{
+    position: absolute;
+    top: 60%;
+    left: 53.5%;
+}
+.college{
+    position: absolute;
+    top: 70%;
+    left: 53.5%;
+}
+.collegepe{
+    position: absolute;
+    top: 80%;
+    left: 53.5%;
+}
+.male{
+    position: absolute;
+    top: 72%;
+    left: 40%;
+}
+.female{
+    position: absolute;
+    top: 72%;
+    left: 67%;
+}
+.maleicon{
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    width: 250px;
+    height: 250px;
+}
+.femaleicon{
+    position: absolute;
+    top: 40.5%;
+    left: 68%;
+    width: 215px;
+    height: 215px;
+}
+.femalechartcollege{
+    font-family: Fourth;
+    padding: 0;
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 28%;
+    left: 31.5%;
+    background-color: black;
+    color: black;
+    text-align: center;
+}
+.bgcolorsub{
+    background-color: white;
+}
+.bgcolorhead{
+    background-color: skyblue;
+}
+@media (max-width: 500px){
+    .heading{
+        width: 100%;
+    }
+    .heading img{
+        position: relative;
+        height: 50px;
+        left: 12px;
+        padding: 0;
+    }
+    .logomsc{
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        height: 50px;
+    }
+    svg{
+        position: absolute;
+        bottom: 0;
+    }
+    .title{
+        position: absolute;
+        bottom: 5%;
+        left: 1.5%;
+        min-width: 55vh;
+    }
+    .title pre{
+        font-size: 35px;
+        padding: 15px;
+    }
+    .dots img{
+        visibility: hidden;
+    }
+    .button1{
+        position: absolute;
+        bottom: 200px;
+        left: 10%;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .button2{
+        position: absolute;
+        bottom: 200px;
+        right: 10%;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .quote{
+        position: absolute;
+        bottom: 10px;
+        left: 16%;
+        letter-spacing: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+    }
+    .wrapper{
+        position: absolute;
+        width: 400px;
+        height: 440px;
+        top: 17.5%;
+        left: 35.5%;
+        padding: 15px;
+    }
+}

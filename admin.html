@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MSC Uniform Ordering System</title>
+    <link href="1.css" rel="stylesheet">
+  </head>
+  <body class="body1">
+    <section class="bg-image">
+    <div class="heading">
+      <pre><u>MSC-UOS</u></pre>
+      <img src="images/msc.png">
+    </div>
+    <img class="logomsc" src="images/logomsc.png">
+    <div class="gradient"></div>
+      <div class="wrapper">
+        <section class="form-box">
+            <pre class="welcome"><b>Welcome back, Admin!</b></pre>
+            <pre class="please">Please enter your details</pre>
+            <form action="#">
+                <div class="input-box">
+                      <label>Email:</label><br>
+                      <input type="email" placeholder="Enter Email Address" required>
+                </div>
+                <div class="input-box1">
+                    <label>Password:</label><br>
+                    <input type="password" placeholder="Enter Password" id="password" required>
+                    <img src="images/closed-icon.png" id="eyeicon">
+                </div>
+                <div class="forgot">
+                    <a href="#"><p><i>Forgot Password</i></p></a>
+                </div>
+                <div class="login">
+                    <button type="submit">Log in</button>
+                </div>
+            </form>
+        </section>
+      </div>
+      <div class="goback">
+        <a href="index.html"><button><p>&#10688</p>Back</button></a>
+      </div>
+      <div class="dots">
+        <img src="images/dots.png" alt="dots">
+      </div>
+    </section> 
+  <script>
+    let backicon = document.getElementById("back-icon")
+    let password = document.getElementById("password");
+    let eyeicon = document.getElementById("eyeicon");
+
+      eyeicon.onclick = function(){
+        if(password.type == "password"){
+          password.type = "text";
+          eyeicon.src = "images/open-icon.png";
+        }
+        else if(eyeicon.src == "images/open-icon.png"){
+          password.type = "password";
+          eyeicon.src = "images/closed-icon.png";
+        }
+        else{
+          password.type = "password";
+          eyeicon.src = "images/closed-icon.png";
+        }
+      }
+  </script>
+  </body>
+</html>
